@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap");
 
+/* ---------- Variables ---------- */
 :root {
   --oceano: #0b4f5c;
   --oceano-oscuro: #08373f;
@@ -11,16 +12,17 @@
   --sol-oscuro: #dc9d0a;
 
   /* Las cuatro regiones del país */
-  --blanco: #c9d9d6;
+ 
   --costa: #f4b41a;
-  --sierra: #1b2ed9;
-  --selva: #f30000;
-  --galapagos: #c9d9d6;
+  --sierra: #1b1ed9;
+  --selva: #f30303;
+  --galapagos: #fbfbfb;
 
   --fuente-titulo: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
   --fuente-texto: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+/* ---------- Base ---------- */
 *,
 *::before,
 *::after {
@@ -90,9 +92,9 @@ header::after {
   height: 8px;
   background: linear-gradient(
     to right,
-    var(--costa) 0 25%,
-    var(--sierra) 25% 50%,
-    var(--selva) 50% 75%,
+    var(--costa) 0 35%,
+    var(--sierra) 35% 70%,
+    var(--selva) 70% 100%,
     var(--galapagos) 75% 100%
   );
 }
